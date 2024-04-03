@@ -42,7 +42,28 @@ class _AnaEkranState extends State<AnaEkran> {
               //--------------
               //--------------Kodları aşağıya yazınız.
               //--------------
-              Column()
+              Column(
+                mainAxisAlignment:MainAxisAlignment.end,
+                children:[
+                  Container(
+                    height:150,
+                    width:MediaQuery.of(context).size.width,
+                    color:Colors.blueGrey,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(height: 100,width: 100,color: Colors.white,child: Icon(Icons.chat,color:Colors.blueGrey,),),
+                        SizedBox(height: 25,width: 100,),
+                        Container(height: 100,width: 100,color: Colors.white,child: Icon(Icons.duo,color: Colors.blueGrey,),),
+                        SizedBox(height: 25,width: 100,),
+                        Container(height: 100,width: 100,color: Colors.white,child: Icon(Icons.groups,color:Colors.blueGrey,),),
+                        SizedBox(height: 25,width: 100,),
+                        Container(height: 100,width: 100,color: Colors.white,child: Icon(Icons.call,color: Colors.blueGrey,),),
+                      ],
+                    ),
+                    )
+                ]
+              )
           //--------------
           //--------------
           //--------------
